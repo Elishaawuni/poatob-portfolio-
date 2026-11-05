@@ -338,3 +338,5 @@ export const consultancyServices = [
     icon: 'chart',
   },
 ]
+
+export const gallery = []

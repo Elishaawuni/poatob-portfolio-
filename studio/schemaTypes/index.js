@@ -11,6 +11,7 @@ import publication from './publication'
 import award from './award'
 import post from './post'
 import consultancyService from './consultancyService'
+import galleryItem from './galleryItem'
 
 export const schemaTypes = [
   siteSettings,
@@ -26,4 +27,5 @@ export const schemaTypes = [
   award,
   post,
   consultancyService,
+  galleryItem,
 ]

@@ -12,6 +12,7 @@ const LINKS = [
   { label: 'Insights', to: '#insights' },
   { label: 'CV', to: '#cv' },
   { label: 'Contact', to: '#contact' },
+  {label: 'Gallery', to: '#gallery'}
 ]
 
 export default function Navbar() {

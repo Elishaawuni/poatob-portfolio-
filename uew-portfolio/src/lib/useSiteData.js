@@ -18,6 +18,7 @@ const initialState = {
   awards: fallback.awards,
   posts: fallback.posts,
   consultancyServices: fallback.consultancyServices,
+   gallery: fallback.gallery
 }
 
 /** Fetches every content type once and merges with fallback demo content. */
@@ -42,6 +43,7 @@ export function useSiteData() {
         awards,
         posts,
         consultancyServices,
+        gallery,
       ] = await Promise.all([
         sanityFetch(Q.SETTINGS_QUERY, {}, fallback.settings),
         sanityFetch(Q.EDUCATION_QUERY, {}, fallback.education),
@@ -56,6 +58,7 @@ export function useSiteData() {
         sanityFetch(Q.AWARDS_QUERY, {}, fallback.awards),
         sanityFetch(Q.POSTS_QUERY, {}, fallback.posts),
         sanityFetch(Q.CONSULTANCY_QUERY, {}, fallback.consultancyServices),
+        sanityFetch(Q.GALLERY_QUERY, {}, fallback.gallery),
       ])
 
       if (mounted) {
@@ -74,6 +77,7 @@ export function useSiteData() {
           awards,
           posts,
           consultancyServices,
+          gallery,
         })
       }
     }

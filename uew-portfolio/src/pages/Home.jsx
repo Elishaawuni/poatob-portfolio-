@@ -15,6 +15,7 @@ import CV from '../sections/CV'
 import Consultancy from '../sections/Consultancy'
 import Contact from '../sections/Contact'
 import KenteDivider from '../components/KenteDivider'
+import Gallery from '../sections/Gallery';
 
 export default function Home({ data }) {
   return (
@@ -36,6 +37,8 @@ export default function Home({ data }) {
       <Consultancy services={data.consultancyServices} settings={data.settings} />
       <KenteDivider thin />
       <Contact settings={data.settings} />
+      <Gallery gallery={data.gallery}/>
+      <Insights posts={data.posts}/>
     </>
   )
 }

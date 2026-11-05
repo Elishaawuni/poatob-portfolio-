@@ -23,6 +23,7 @@ export const structure = (S) =>
       S.listItem().title('Awards & Honours').child(S.documentTypeList('award').title('Awards & Honours')),
       S.divider(),
 
+      S.listItem().title('Gallery').child(S.documentTypeList('galleryItem').title('Gallery')),
       S.listItem().title('Blog / Insights / Updates').child(S.documentTypeList('post').title('Blog / Insights / Updates')),
       S.listItem().title('Consultancy Services').child(S.documentTypeList('consultancyService').title('Consultancy Services')),
     ])

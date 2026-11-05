@@ -68,3 +68,7 @@ export const CONSULTANCY_QUERY = `*[_type == "consultancyService"] | order(order
 }`
 
 export const AWARDED_PUBLICATION_COUNT = `count(*[_type == "publication"])`
+
+export const GALLERY_QUERY = `*[_type == "galleryItem" && defined(image.asset)] | order(date desc, _createdAt desc){
+  _id, title, caption, category, date, "image": image.asset->url
+}`

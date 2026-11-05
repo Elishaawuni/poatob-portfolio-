@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@sanity/vision": "^6.15.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "sanity": "^6.15.0",
-    "styled-components": "^6.1.13"
+    "styled-components": "^6.6.0"
   }
 }
